@@ -1,0 +1,60 @@
+﻿<html lang="zh-CN">
+<head>
+	<meta charset="gb2312">
+	<meta http-equiv="Cache-Control" content="no-transform">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<link href="./common.css" rel="stylesheet" type="text/css"></link>
+	<link href="./main.css" rel="stylesheet" type="text/css"></link>
+	<script type="text/javascript" src="http://img.jb51.net/jslib/jquery/jquery.min.js"></script>
+	<script src="./My97DatePicker/WdatePicker.js" type="text/javascript" ></script>
+	<script src="./plug.js" type="text/javascript" ></script>
+</head>
+	<body>
+	
+<div class="content">
+	<div class="right" style="width: 80%;">
+	<div class="right" style="width: 80%;">
+		<div class="tab-body" style="display: block;">
+			<div class="calendar-tab"><span class="month active">月</span><span class="quarter">季</span><span class="year">年</span><span class="custom">任意时间段</span></div>
+			<div class="calendar-body"><span class="opt opt-left">&lt;</span><span class="date"></span><span class="opt opt-right">&gt;</span></div>
+			<div class="calendar-custom" style="display: none;">
+				<input type="text" class="calendar last3m" style="width: 135px;" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})">
+				<label style="margin-left: 5px;">至</label>
+				<input type="text" class="calendar now" style="width: 135px;" onClick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})">
+				<button class="btn cancel" onclick="search()">查询</button>
+				<!-- <a href="javascript:;" class="otherTrack carReport" data-id=1>查看用车报告</a> -->
+			</div>
+			<div id="carUsedReportContainer"></div>
+			<!-- <table class="gridtable" style="margin-top:10px;">
+				<tr>
+					<th>车牌号</th><th>车型</th><th>用车次数</th><th>行驶里程（公里）</th><th>总里程（公里）</th><th>违章次数</th><th>操作</th>
+				</tr>
+				<tr>
+					<td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td>
+					<td class="opt-column">
+						<a href="javascript:;" class="otherTrackBtn">查看用车报告</a>
+					</td>
+				</tr>
+				<tr>
+					<td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td>
+				</tr>
+				<tr>
+					<td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td>
+				</tr>
+				<tr>
+					<td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td><td>Text 1A</td>
+				</tr>
+			</table> -->
+		</div>
+	</div>
+	</div>
+	</div>
+	</body>
+<script type="text/javascript">
+$(function(){
+	$.initSpecialCalendar(function(reParam){
+		console.log(reParam);
+	});
+});
+</script>
+</html>
